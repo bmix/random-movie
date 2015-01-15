@@ -1,0 +1,36 @@
+{
+  "name": "random-movie",
+  "version": "1.0.0",
+  "description": "Random movie generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mertkahyaoglu/random-movie"
+  },
+  "keywords": [
+    "random",
+    "movie",
+    "imdb"
+  ],
+  "author": {
+    "name": "Mert Kahyaoğlu",
+    "email": "mertkahyaoglu93@gmail.com",
+    "url": "mertkahyaoglu.github.io"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mertkahyaoglu/random-movie/issues"
+  },
+  "homepage": "https://github.com/mertkahyaoglu/random-movie",
+  "dependencies": {
+    "leading-zeros": "^1.0.1",
+    "node-movie": "^1.1.1",
+    "unique-random": "^1.0.0"
+  }
+}
