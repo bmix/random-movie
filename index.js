@@ -11,6 +11,7 @@ module.exports = function again(cb){
 			//No movie with this random ID.
 			if(data.Error) {
 				again(cb);
+				return;
 			}
       cb(data);
     });

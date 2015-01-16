@@ -4,7 +4,7 @@
   "description": "Random movie generator",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "jshint index.js && node test.js"
   },
   "repository": {
     "type": "git",
