@@ -1,18 +1,17 @@
 'use strict';
 var movie = require('node-movie');
-var rand = require('unique-random')(0,2900000);
-var leadingZeros = require('leading-zeros');
+var ids = require("./id.json");
+var rand = require('unique-random')(0,ids.length);
 
 module.exports = function again(cb){
 	var randNum = rand();
-	var randStr = randNum + '';
-	var randID = 'tt' + leadingZeros(randNum, 7-randStr.length);
-    movie({id: randID}, function(data) {
-			//No movie with this random ID.
-			if(data.Error) {
-				again(cb);
-				return;
-			}
-      cb(data);
-    });
+	var randID = ids[randNum];
+	movie({id: randID}, function(data) {
+		//No movie with this random ID.
+		if(!data || data.Error) {
+			again(cb);
+			return;
+		}
+		cb(data);
+	});
 };

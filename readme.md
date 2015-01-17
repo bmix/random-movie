@@ -1,6 +1,6 @@
 # random-movie
 
-> Get a random movie data from imdb
+> Get a random movie
 
 
 ## Install
@@ -8,6 +8,9 @@
 ```
 $ npm install --save random-movie
 ```
+
+## Contribute
+Accepting PRs for additional movies.
 
 ## Usage
 
