@@ -7,11 +7,6 @@ module.exports = function again(cb){
 	var randNum = rand();
 	var randID = ids[randNum];
 	movie({id: randID}, function(data) {
-		//No movie with this random ID.
-		if(!data || data.Error) {
-			again(cb);
-			return;
-		}
 		cb(data);
 	});
 };
