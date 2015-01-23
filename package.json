@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/mertkahyaoglu/random-movie"
   },
+  "files": [
+    "index.js",
+    "id.json"
+  ],
   "keywords": [
     "random",
     "movie",
