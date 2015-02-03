@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/mertkahyaoglu/random-movie",
   "dependencies": {
-    "node-movie": "^1.2.0",
+    "node-movie": "^2.0.0",
     "unique-random": "^1.0.0"
   }
 }
