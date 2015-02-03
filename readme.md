@@ -16,7 +16,7 @@ Accepting PRs for additional movies.
 
 ```js
 var randomMovie = require('random-movie');
-randomMovie(function(data) {
+randomMovie(function(err, data) {
   console.log(data);
 });
 // Output:
