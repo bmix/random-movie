@@ -1,6 +1,6 @@
 {
   "name": "random-movie",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Random movie generator",
   "main": "index.js",
   "scripts": {
